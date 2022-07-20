@@ -46,57 +46,6 @@
   }
 }
 
-.line {
-  display: flex;
-  border-right: solid 2px rgba(255, 255, 255, 0.7);
-  white-space: nowrap;
-  overflow: hidden;
-  width: 13ch;
-  animation: typewriter 6s steps(13) infinite, cursor 0.75s steps(13) infinite;
-}
-
-.text-animation::before {
-  content: '';
-  animation: animate infinite 12s;
-}
-
-/* typewriter animation */
-@keyframes typewriter {
-  0% {
-    width: 0;
-  }
-
-  30% {
-    width: 13ch;
-  }
-}
-
-/* cursor animation */
-@keyframes cursor {
-  0% {
-    border-right-color: rgba(255, 255, 255, 0.7);
-  }
-
-  100% {
-    border-right-color: transparent;
-  }
-}
-
-/* typing animation */
-@keyframes animate {
-  0% {
-    content: 'Jesús Valero.'
-  }
-
-  50% {
-    content: 'Jesús Valero.'
-  }
-
-  50.5% {
-    content: 'Web Developer.'
-  }
-
-  100% {
-    content: 'Web Developer.'
-  }
+.type-text {
+  color: rgb(34, 197, 94);
 }

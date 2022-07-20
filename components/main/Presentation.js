@@ -1,3 +1,5 @@
+import Typewriter from 'typewriter-effect';
+
 const Presentation = () => {
   return (
     <div className="md:flex justify-between items-center mt-28">
@@ -6,7 +8,15 @@ const Presentation = () => {
 
         <div className="lg:flex text-5xl font-black mt-5 lg:space-x-3">
           <p className="whitespace-nowrap">I am</p>
-          <span className="line text-animation text-green-500"></span>
+          <Typewriter
+            options={{
+              strings: ['Jesús Valero. ', 'Web Developer. '],
+              autoStart: true,
+              loop: true,
+              pauseFor: 3000,
+              wrapperClassName: 'type-text'
+            }}
+          />
         </div>
         <p className="mt-3 font-light">I am a web developer in constant growth. I like to learn new things and develop using modern technologies.</p>
         <button className="bg-green-500 py-2 px-6 rounded-full mt-5">Hire Me</button>
