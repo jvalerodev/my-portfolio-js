@@ -1,40 +1,27 @@
 import Link from 'next/link';
 
 const Dropdown = ({ open }) => {
-  console.log(open);
   return (
-    <ul className={open ? "nav-menu active" : "nav-menu"}>
-      <li className="nav-item">
-        <Link href="#">
-          <a className="px-3 transition hover:text-slate-900">Home</a>
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link href="#">
-          <a className="px-3 transition hover:text-slate-900">About</a>
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link href="#">
-          <a className="px-3 transition hover:text-slate-900">Services</a>
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link href="#">
-          <a className="px-3 transition hover:text-slate-900">Portfolio</a>
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link href="#">
-          <a className="px-3 transition hover:text-slate-900">Blog</a>
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link href="#">
-          <a className="px-3 transition hover:text-slate-900">Contact</a>
-        </Link>
-      </li>
-    </ul>
+    <nav className={open ? "nav-menu active" : "nav-menu"}>
+      <Link href="#">
+        <a className="nav-item hover:text-neutral-900 px-3 transition">Home</a>
+      </Link>
+      <Link href="#">
+        <a className="nav-item hover:text-neutral-900 px-3 transition">About</a>
+      </Link>
+      <Link href="#">
+        <a className="nav-item hover:text-neutral-900 px-3 transition">Services</a>
+      </Link>
+      <Link href="#">
+        <a className="nav-item hover:text-neutral-900 px-3 transition">Portfolio</a>
+      </Link>
+      <Link href="#">
+        <a className="nav-item hover:text-neutral-900 px-3 transition">Blog</a>
+      </Link>
+      <Link href="#">
+        <a className="nav-item hover:text-neutral-900 px-3 transition">Contact</a>
+      </Link>
+    </nav>
   );
 };
 
