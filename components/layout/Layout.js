@@ -3,7 +3,7 @@ import Header from '@/components/header/Header';
 
 const Layout = ({ children }) => {
   return (
-    <div className="bg-neutral-900 h-screen overflow-y-auto">
+    <div className="h-screen overflow-y-auto">
       <Head>
         <title>Jesús Valero - Web Developer</title>
       </Head>
