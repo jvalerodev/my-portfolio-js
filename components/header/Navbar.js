@@ -5,9 +5,9 @@ const Navbar = ({ open, setOpen }) => {
   return (
     <nav className="flex justify-between items-center my-5">
       <div className="hidden lg:flex justify-center space-x-5 text-sm uppercase">
-        <Link href="#"><a className="py-2 px-3 transition hover:bg-green-500 hover:text-black font-bold rounded">Home</a></Link>
-        <Link href="#"><a className="py-2 px-3 transition hover:bg-green-500 hover:text-black font-bold rounded">About</a></Link>
-        <Link href="#"><a className="py-2 px-3 transition hover:bg-green-500 hover:text-black font-bold rounded">Services</a></Link>
+        <Link href="#home"><a className="py-2 px-3 transition hover:bg-green-500 hover:text-black font-bold rounded">Home</a></Link>
+        <Link href="#about"><a className="py-2 px-3 transition hover:bg-green-500 hover:text-black font-bold rounded">About</a></Link>
+        <Link href="#services"><a className="py-2 px-3 transition hover:bg-green-500 hover:text-black font-bold rounded">Services</a></Link>
       </div>
 
       <div className="text-center hover:opacity-90">
@@ -17,8 +17,8 @@ const Navbar = ({ open, setOpen }) => {
       </div>
 
       <div className="hidden lg:flex justify-center space-x-5 text-sm uppercase">
-        <Link href="#"><a className="py-2 px-3 transition hover:bg-green-500 hover:text-black font-bold rounded">Portfolio</a></Link>
-        <Link href="#"><a className="py-2 px-3 transition hover:bg-green-500 hover:text-black font-bold rounded">Blog</a></Link>
+        <Link href="#portfolio"><a className="py-2 px-3 transition hover:bg-green-500 hover:text-black font-bold rounded">Portfolio</a></Link>
+        <Link href="#blog"><a className="py-2 px-3 transition hover:bg-green-500 hover:text-black font-bold rounded">Blog</a></Link>
         <Link href="#"><a className="py-2 px-3 transition hover:bg-green-500 hover:text-black font-bold rounded">Contact</a></Link>
       </div>
 

@@ -2,7 +2,7 @@ import Typewriter from 'typewriter-effect';
 
 const Presentation = () => {
   return (
-    <div className="md:flex justify-between items-center mt-36">
+    <div id="home" className="md:flex justify-between items-center mt-36">
       <div className="md:w-1/2">
         <p className="text-2xl text-green-500 font-bold uppercase">Hi there,</p>
 
@@ -24,7 +24,7 @@ const Presentation = () => {
         <button className="bg-green-500 hover:bg-green-600 transition ease-in-out delay-100 hover:scale-110 duration-200 py-2 px-8 rounded-full mt-5">Hire Me</button>
       </div>
 
-      <div className="md:w-1/2 mx-auto">
+      <div className="flex justify-center">
         <img src="/img/person.png" alt="Jesús Valero" />
       </div>
     </div>

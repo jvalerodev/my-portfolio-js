@@ -8,8 +8,11 @@
   html {
     font-family: 'Roboto', sans-serif;
     color: white;
+    letter-spacing: 0.5px
   }
 }
+
+/* ----- HEADER ----- */
 
 .nav-menu {
   display: flex;
@@ -48,4 +51,12 @@
 
 .type-text {
   color: rgb(34, 197, 94);
+}
+
+/* ----- PRESENTATION MENU ----- */
+
+.profile-field::after {
+  position: absolute;
+  content: ':';
+  left: 88px;
 }
