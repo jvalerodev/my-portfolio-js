@@ -4,7 +4,7 @@ import Footer from '@/components/footer/Footer';
 
 const Layout = ({ children }) => {
   return (
-    <div className="h-screen overflow-y-auto">
+    <div className="h-screen overflow-y-auto scroll-smooth">
       <Head>
         <title>Jesús Valero - Web Developer</title>
       </Head>

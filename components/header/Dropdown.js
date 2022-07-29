@@ -3,19 +3,19 @@ import Link from 'next/link';
 const Dropdown = ({ open }) => {
   return (
     <nav className={open ? "nav-menu active" : "nav-menu"}>
-      <Link href="#">
+      <Link href="#home">
         <a className="nav-item hover:text-black px-3 transition">Home</a>
       </Link>
-      <Link href="#">
+      <Link href="#about">
         <a className="nav-item hover:text-black px-3 transition">About</a>
       </Link>
-      <Link href="#">
+      <Link href="#services">
         <a className="nav-item hover:text-black px-3 transition">Services</a>
       </Link>
-      <Link href="#">
+      <Link href="#portfolio">
         <a className="nav-item hover:text-black px-3 transition">Portfolio</a>
       </Link>
-      <Link href="#">
+      <Link href="#blog">
         <a className="nav-item hover:text-black px-3 transition">Blog</a>
       </Link>
       <Link href="#">
