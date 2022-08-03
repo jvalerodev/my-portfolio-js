@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = ({ open, setOpen }) => {
   return (
-    <nav className="flex justify-between items-center my-5">
+    <nav className="flex justify-between items-center">
       <div className="hidden lg:flex justify-center space-x-5 text-sm uppercase">
         <Link href="#home"><a className="py-2 px-3 transition hover:bg-green-500 hover:text-black font-bold rounded">Home</a></Link>
         <Link href="#about"><a className="py-2 px-3 transition hover:bg-green-500 hover:text-black font-bold rounded">About</a></Link>

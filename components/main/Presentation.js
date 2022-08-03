@@ -2,7 +2,7 @@ import Typewriter from 'typewriter-effect';
 
 const Presentation = () => {
   return (
-    <div id="home" className="md:flex justify-between items-center mt-36">
+    <div id="home" className="md:flex justify-between items-center pt-36">
       <div className="md:w-1/2">
         <p className="text-2xl text-green-500 font-bold uppercase">Hi there,</p>
 

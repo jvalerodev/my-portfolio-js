@@ -8,7 +8,7 @@
   html {
     font-family: 'Roboto', sans-serif;
     color: white;
-    letter-spacing: 0.5px
+    letter-spacing: 0.5px;
   }
 }
 
@@ -21,7 +21,7 @@
   width: 100%;
   position: absolute;
   top: 90px;
-  left: -100%;
+  left: -200%;
   opacity: 1;
   transition: all 0.5s ease-in-out;
   font-size: 0.875rem;
@@ -51,12 +51,4 @@
 
 .type-text {
   color: rgb(34, 197, 94);
-}
-
-/* ----- PRESENTATION MENU ----- */
-
-.profile-field::after {
-  position: absolute;
-  content: ':';
-  left: 88px;
 }
