@@ -1,6 +1,10 @@
+import useObserver from '@/hooks/useObserver';
+
 const About = () => {
+  const { ref } = useObserver();
+
   return (
-    <div id="about" className="pt-36">
+    <div id="about" className="pt-36" ref={ref}>
       <div className="lg:flex lg:space-x-14 items-center bg-black">
         <div className="lg:w-1/2">
           <img src="/img/web-developer.jpg" alt="Web developer" className="w-full border-4 border-green-500 p-2" />

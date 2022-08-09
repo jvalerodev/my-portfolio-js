@@ -1,12 +1,15 @@
 import Typewriter from 'typewriter-effect';
+import useObserver from '@/hooks/useObserver';
 
 const Presentation = () => {
+  const { ref } = useObserver();
+
   return (
-    <div id="home" className="md:flex justify-between items-center pt-36">
+    <div id="home" className="md:flex justify-between items-center pt-36" ref={ref}>
       <div className="md:w-1/2">
         <p className="text-2xl text-green-500 font-bold uppercase">Hi there,</p>
 
-        <div className="lg:flex text-4xl sm:text-5xl font-black mt-5 lg:space-x-3">
+        <div className="lg:flex text-5xl font-black mt-5 lg:space-x-3">
           <p className="whitespace-nowrap">I am</p>
           <Typewriter
             options={{
@@ -14,7 +17,7 @@ const Presentation = () => {
               autoStart: true,
               loop: true,
               pauseFor: 3000,
-              wrapperClassName: 'type-text'
+              wrapperClassName: 'text-green-500'
             }}
           />
         </div>

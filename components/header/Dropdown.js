@@ -1,5 +1,7 @@
-import styled from 'styled-components';
+import { useEffect } from 'react';
 import Link from 'next/link';
+import styled from 'styled-components';
+import useVisibility from '@/hooks/useVisibility';
 
 const NavMenu = styled.nav`
   display: flex;
@@ -38,25 +40,31 @@ const NavItem = styled.a`
 `;
 
 const Dropdown = ({ open }) => {
+  const { visibleEntry } = useVisibility();
+
+  useEffect(() => {
+    history.pushState(null, null, `/${visibleEntry}`);
+  }, [visibleEntry]);
+
   return (
     <NavMenu active={open}>
       <Link href="#home">
-        <NavItem className="nav-item hover:text-black px-3 transition cursor-pointer">Home</NavItem>
+        <NavItem className={`transition hover:text-black px-3 cursor-pointer ${visibleEntry === '#home' && 'text-black'}`}>Home</NavItem>
       </Link>
       <Link href="#about">
-        <NavItem className="nav-item hover:text-black px-3 transition cursor-pointer">About</NavItem>
+        <NavItem className={`transition hover:text-black px-3 cursor-pointer ${visibleEntry === '#about' && 'text-black'}`}>About</NavItem>
       </Link>
       <Link href="#services">
-        <NavItem className="nav-item hover:text-black px-3 transition cursor-pointer">Services</NavItem>
+        <NavItem className={`transition hover:text-black px-3 cursor-pointer ${visibleEntry === '#services' && 'text-black'}`}>Services</NavItem>
       </Link>
       <Link href="#portfolio">
-        <NavItem className="nav-item hover:text-black px-3 transition cursor-pointer">Portfolio</NavItem>
+        <NavItem className={`transition hover:text-black px-3 cursor-pointer ${visibleEntry === '#portfolio' && 'text-black'}`}>Portfolio</NavItem>
       </Link>
       <Link href="#blog">
-        <NavItem className="nav-item hover:text-black px-3 transition cursor-pointer">Blog</NavItem>
+        <NavItem className={`transition hover:text-black px-3 cursor-pointer ${visibleEntry === '#blog' && 'text-black'}`}>Blog</NavItem>
       </Link>
-      <Link href="#">
-        <NavItem className="nav-item hover:text-black px-3 transition cursor-pointer">Contact</NavItem>
+      <Link href="#contact">
+        <NavItem className={`transition hover:text-black px-3 cursor-pointer ${visibleEntry === '#contact' && 'text-black'}`}>Contact</NavItem>
       </Link>
     </NavMenu>
   );

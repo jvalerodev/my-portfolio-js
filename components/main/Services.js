@@ -1,9 +1,12 @@
 import { FaDesktop, FaReact, FaHtml5, FaCss3Alt, FaNodeJs } from 'react-icons/fa';
 import { DiJavascript1 } from 'react-icons/di';
+import useObserver from '@/hooks/useObserver';
 
 const Services = () => {
+  const { ref } = useObserver();
+
   return (
-    <div id="services" className="text-center pt-36">
+    <div id="services" className="text-center pt-36" ref={ref}>
       <h2 className="bg-black text-4xl font-bold uppercase">My <span className="text-green-500">Services</span></h2>
 
       <div className="bg-black grid sm:grid-cols-2 lg:grid-cols-3 mt-12 gap-y-16 gap-x-8 p-2">

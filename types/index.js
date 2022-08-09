@@ -1,0 +1,1 @@
+export const SET_ENTRY_VISIBLE = 'SET_ENTRY_VISIBLE';
