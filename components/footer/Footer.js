@@ -2,7 +2,7 @@ import { FaFacebook, FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <footer className="mt-32">
+    <footer className="pt-72">
       <div className="flex justify-evenly items-center bg-black sm:text-3xl text-2xl p-2">
         <div className="transition hover:bg-green-500 rounded py-2 px-3 cursor-pointer">
           <FaFacebook />
