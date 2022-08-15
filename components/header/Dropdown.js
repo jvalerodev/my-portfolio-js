@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
 import useVisibility from '@/hooks/useVisibility';
@@ -41,29 +40,25 @@ const NavItem = styled.a`
 
 const Dropdown = ({ open }) => {
   const { visibleEntry } = useVisibility();
-
-  useEffect(() => {
-    history.pushState(null, null, `/${visibleEntry}`);
-  }, [visibleEntry]);
-
+  
   return (
     <NavMenu active={open}>
-      <Link href="#home">
+      <Link href="/#home">
         <NavItem className={`transition hover:text-black px-3 cursor-pointer ${visibleEntry === '#home' && 'text-black'}`}>Home</NavItem>
       </Link>
-      <Link href="#about">
+      <Link href="/#about">
         <NavItem className={`transition hover:text-black px-3 cursor-pointer ${visibleEntry === '#about' && 'text-black'}`}>About</NavItem>
       </Link>
-      <Link href="#services">
+      <Link href="/#services">
         <NavItem className={`transition hover:text-black px-3 cursor-pointer ${visibleEntry === '#services' && 'text-black'}`}>Services</NavItem>
       </Link>
-      <Link href="#portfolio">
+      <Link href="/#portfolio">
         <NavItem className={`transition hover:text-black px-3 cursor-pointer ${visibleEntry === '#portfolio' && 'text-black'}`}>Portfolio</NavItem>
       </Link>
-      <Link href="#blog">
+      <Link href="/#blog">
         <NavItem className={`transition hover:text-black px-3 cursor-pointer ${visibleEntry === '#blog' && 'text-black'}`}>Blog</NavItem>
       </Link>
-      <Link href="#contact">
+      <Link href="/#contact">
         <NavItem className={`transition hover:text-black px-3 cursor-pointer ${visibleEntry === '#contact' && 'text-black'}`}>Contact</NavItem>
       </Link>
     </NavMenu>

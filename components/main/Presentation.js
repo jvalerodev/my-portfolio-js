@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Typewriter from 'typewriter-effect';
 import useObserver from '@/hooks/useObserver';
 
@@ -24,7 +25,9 @@ const Presentation = () => {
 
         <p className="mt-5 font-light">I am a web developer in constant growth. I like to learn new things and develop using modern technologies.</p>
 
-        <button className="bg-green-500 hover:bg-green-600 transition ease-in-out delay-100 hover:scale-110 duration-200 py-2 px-8 rounded-full mt-5">Hire Me</button>
+        <Link href="/#contact">
+          <a className="bg-green-500 hover:bg-green-600 transition ease-in-out delay-100 hover:scale-110 duration-200 py-2 px-8 rounded-full mt-5 inline-block">Hire Me</a>
+        </Link>
       </div>
 
       <div className="flex justify-center">

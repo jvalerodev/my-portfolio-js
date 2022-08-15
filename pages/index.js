@@ -4,6 +4,7 @@ import Background from '@/components/layout/Background';
 import About from '@/components/main/About';
 import Services from '@/components/main/Services';
 import Contact from '@/components/main/Contact';
+import Portfolio from '@/components/main/Portfolio';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         <Presentation />
         <About />
         <Services />
+        <Portfolio />
         <Contact />
       </Layout>
     </Background>
