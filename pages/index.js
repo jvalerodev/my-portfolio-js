@@ -1,10 +1,10 @@
-import Layout from '@/components/layout/Layout';
-import Presentation from '@/components/main/Presentation';
 import Background from '@/components/layout/Background';
-import About from '@/components/main/About';
-import Services from '@/components/main/Services';
+import Layout from '@/components/layout';
+import Presentation from '@/components/main/presentation';
+import About from '@/components/main/about';
+import Services from '@/components/main/services';
+import Portfolio from '@/components/main/portfolio';
 import Contact from '@/components/main/contact';
-import Portfolio from '@/components/main/Portfolio';
 
 const Home = () => {
   return (

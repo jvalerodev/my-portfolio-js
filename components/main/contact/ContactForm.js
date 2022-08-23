@@ -1,5 +1,5 @@
 import { useForm } from 'react-hook-form';
-import Alert from '@/components/alert/Alert';
+import Alert from '@/components/alert';
 
 const ContactForm = () => {
   const { register, formState: { errors }, handleSubmit } = useForm();

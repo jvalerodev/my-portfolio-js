@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Stars1, Stars2, Stars3 } from './styled-background/Stars';
+import { Stars1, Stars2, Stars3 } from './Stars';
 
 const StarsContainer = styled.div`
   position: absolute;
