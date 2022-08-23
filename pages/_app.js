@@ -1,12 +1,12 @@
 import '@/styles/globals.css';
 import '@/styles/stars.css';
-import VisibilityProvider from '@/context/visibility/provider';
+import VisibilityState from '@/context/visibility/state';
 
 const MyApp = ({ Component, pageProps }) => {
   return (
-    <VisibilityProvider>
+    <VisibilityState>
       <Component {...pageProps} />
-    </VisibilityProvider>
+    </VisibilityState>
   );
 };
 

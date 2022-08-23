@@ -3,7 +3,7 @@ import VisibilityContext from '@/context/visibility/context';
 import VisibilityReducer from '@/context/visibility/reducer';
 import { SET_ENTRY_VISIBLE } from '@/types/index';
 
-const VisibilityProvider = ({ children }) => {
+const VisibilityState = ({ children }) => {
   const initialState = {
     visibleEntry: ''
   };
@@ -29,4 +29,4 @@ const VisibilityProvider = ({ children }) => {
   );
 };
 
-export default VisibilityProvider;
+export default VisibilityState;
