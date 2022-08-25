@@ -7,7 +7,8 @@
       "@/context/*": ["context/*"],
       "@/types/*": ["types/*"],
       "@/styles/*": ["styles/*"],
-      "@/config/*": ["config/*"]
+      "@/config/*": ["config/*"],
+      "@/server/*": ["server/*"]
     }
   }
 }

@@ -21,7 +21,7 @@ const NavMenu = styled.nav`
 
   ${({ active }) => active && `
     @media (max-width: 1023px) {
-      background: rgb(34, 197, 94);
+      background-color: rgb(34, 197, 94);
       left: 0;
       opacity: 1;
       transition: all 0.5s ease-in-out;
