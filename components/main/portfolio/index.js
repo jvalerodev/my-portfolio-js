@@ -44,7 +44,7 @@ const Portfolio = () => {
             <Content>
               <h4 className="font-bold text-lg mb-3 text-center">My Portfolio</h4>
               <div className="flex justify-center items-center space-x-8">
-                <a href="/" target="_blank" rel="noreferrer">
+                <a href="https://jvalero.dev/" target="_blank" rel="noreferrer">
                   <FaRegEye className="text-4xl p-2 bg-white text-green-500 rounded-full cursor-pointer" />
                 </a>
                 <a href="https://github.com/valerojesus/my-portfolio/" target="_blank" rel="noreferrer">
@@ -76,10 +76,26 @@ const Portfolio = () => {
             <Content>
               <h4 className="font-bold text-lg mb-3 text-center">Node Send</h4>
               <div className="flex justify-center items-center space-x-8">
-                <a href="http://nodesend-frontend-two.vercel.app/" target="_blank" rel="noreferrer">
+                <a href="https://nodesend-frontend-two.vercel.app/" target="_blank" rel="noreferrer">
                   <FaRegEye className="text-4xl p-2 bg-white text-green-500 rounded-full cursor-pointer" />
                 </a>
                 <a href="https://github.com/valerojesus/nodesend-frontend/" target="_blank" rel="noreferrer">
+                  <FaCode className="text-4xl p-2 bg-white text-green-500 rounded-full cursor-pointer" />
+                </a>
+              </div>
+            </Content>
+          </Info>
+        </Container>
+        <Container>
+          <img src="/img/crm-react.png" alt="CRM React" className="rounded" />
+          <Info className="overlay">
+            <Content>
+              <h4 className="font-bold text-lg mb-3 text-center">CRM React</h4>
+              <div className="flex justify-center items-center space-x-8">
+                <a href="https://crmrreact.netlify.app/" target="_blank" rel="noreferrer">
+                  <FaRegEye className="text-4xl p-2 bg-white text-green-500 rounded-full cursor-pointer" />
+                </a>
+                <a href="https://github.com/jvalerodev/crm-react/" target="_blank" rel="noreferrer">
                   <FaCode className="text-4xl p-2 bg-white text-green-500 rounded-full cursor-pointer" />
                 </a>
               </div>

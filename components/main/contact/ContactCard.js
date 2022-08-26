@@ -16,7 +16,7 @@ const ContactCard = () => {
 
           <div className="flex items-center space-x-4">
             <MdEmail className="bg-green-500 text-4xl p-2 rounded-full" />
-            <p className="font-light break-all">valerojesusg@gmail.com</p>
+            <p className="font-light break-all">jvalerodev@gmail.com</p>
           </div>
 
           <div className="flex items-center space-x-4">

@@ -12,8 +12,8 @@ const About = () => {
         <div className="lg:w-1/2 leading-7 mt-10 lg:mt-0">
           <h3 className="text-3xl font-bold text-center">Hello, I am <span className="text-green-500">Web Developer</span></h3>
           <p className="mt-5">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus assumenda, repellendus animi placeat suscipit, mollitia eveniet nesciunt
-            sint totam laudantium tempora veritatis nobis libero, numquam cumque esse vel qui fuga.
+            I am a systems engineering student. I love the development of applications and web pages. I like to develop using the best practices,
+            with clean and efficient code. Highly focused on being a better programmer every day. Here is some information about me:
           </p>
           <ul className="mt-5">
             <li>
@@ -34,7 +34,7 @@ const About = () => {
             </li>
             <li>
               <span className="font-bold inline-block">E-mail:</span>
-              <span className="ml-12 text-white">valerojesusg@gmail.com</span>
+              <span className="ml-12 text-white">jvalerodev@gmail.com</span>
             </li>
           </ul>
         </div>
