@@ -8,11 +8,13 @@ const Navbar = ({ open, setOpen }) => {
   return (
     <nav className="flex justify-between items-center">
       <div className="w-1/3 hover:opacity-90">
-        <Link href="/">
-          <a className="text-5xl font-black">J<span className="text-green-500 uppercase">Valero</span></a>
-        </Link>
+        <h1>
+          <Link href="/">
+            <a className="text-5xl font-black">J<span className="text-green-500 uppercase">Valero</span></a>
+          </Link>
+        </h1>
       </div>
-      
+
       <div className="w-2/3 hidden lg:flex justify-evenly space-x-5 text-sm uppercase">
         <Link href="/#home">
           <a className={`py-2 px-3 transition hover:bg-green-500 font-bold rounded ${visibleEntry === '#home' && 'bg-green-500'}`}>Home</a>
