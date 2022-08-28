@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
 import useObserver from '@/hooks/useObserver';
 
@@ -30,8 +31,16 @@ const Presentation = () => {
         </Link>
       </div>
 
-      <div className="flex justify-center">
-        <img src="/img/person.png" alt="Jesús Valero" />
+      <div className="md:w-1/2 text-end">
+        <Image
+          src="/img/person.png"
+          alt="Jesús Valero"
+          width="512px"
+          height="512px"
+          placeholder="blur"
+          blurDataURL="/img/person.png"
+          priority={true}
+        />
       </div>
     </div>
   );

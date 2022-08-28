@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import useObserver from '@/hooks/useObserver';
 
 const About = () => {
@@ -6,32 +7,48 @@ const About = () => {
   return (
     <div id="about" className="pt-36" ref={ref}>
       <div className="lg:flex lg:space-x-14 items-center bg-black">
-        <div className="lg:w-1/2">
-          <img src="/img/web-developer.jpg" alt="Web developer" className="w-full border-4 border-green-500 p-2" />
+        <div className="lg:w-1/2 border-4 border-green-500 p-2">
+          <Image
+            src="/img/web-developer.jpg"
+            alt="Web developer"
+            width="1040px"
+            height="563px"
+            layout="responsive"
+            placeholder="blur"
+            blurDataURL="/img/web-developer.jpg"
+            className="border-4 border-green-500 p-2"
+          />
         </div>
+
         <div className="lg:w-1/2 leading-7 mt-10 lg:mt-0">
           <h3 className="text-3xl font-bold text-center">Hello, I am <span className="text-green-500">Web Developer</span></h3>
+
           <p className="mt-5">
             I am a systems engineering student. I love the development of applications and web pages. I like to develop using the best practices,
             with clean and efficient code. Highly focused on being a better programmer every day. Here is some information about me:
           </p>
+
           <ul className="mt-5">
             <li>
               <span className="font-bold inline-block">Name:</span>
               <span className="ml-12 text-white">Jesús Valero</span>
             </li>
+
             <li>
               <span className="font-bold inline-block">Age:</span>
               <span className="ml-16 text-white">{Math.floor((new Date() - new Date('02/17/2000')) / (1000 * 60 * 60 * 24 * 365))}</span>
             </li>
+
             <li>
               <span className="font-bold inline-block">Address:</span>
               <span className="ml-8 text-white">Mérida, Venezuela</span>
             </li>
+
             <li>
               <span className="font-bold inline-block">Phone:</span>
               <span className="ml-12 text-white">+ (58) 412 765 4801</span>
             </li>
+
             <li>
               <span className="font-bold inline-block">E-mail:</span>
               <span className="ml-12 text-white">jvalerodev@gmail.com</span>

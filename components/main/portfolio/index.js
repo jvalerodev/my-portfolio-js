@@ -1,13 +1,12 @@
+import Image from 'next/image';
 import styled from 'styled-components';
 import { FaRegEye, FaCode } from 'react-icons/fa';
 import useObserver from '@/hooks/useObserver';
+import projects from './projects';
 
 const Container = styled.div`
   position: relative;
-
-  &:hover .overlay {
-    opacity: 1;
-  }
+  display: block;
 `;
 
 const Info = styled.div`
@@ -21,7 +20,11 @@ const Info = styled.div`
   height: 100%;
   transition: 0.5s ease-in-out;
   opacity: 0;
-  border-radius: 0.25rem;
+  border-radius: 0.375rem;
+
+  &:hover {
+    opacity: 1;
+  }
 `;
 
 const Content = styled.div`
@@ -37,71 +40,37 @@ const Portfolio = () => {
   return (
     <div id="portfolio" className="pt-36" ref={ref}>
       <h2 className="text-4xl text-center font-bold uppercase bg-black">My <span className="text-green-500">Portfolio</span></h2>
-      <div className="bg-black grid sm:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-8 items-center mt-12 p-2">
-        <Container>
-          <img src="/img/portfolio.png" alt="Portfolio" className="rounded" />
-          <Info className="overlay">
-            <Content>
-              <h4 className="font-bold text-lg mb-3 text-center">My Portfolio</h4>
-              <div className="flex justify-center items-center space-x-8">
-                <a href="https://jvalero.dev/" target="_blank" rel="noreferrer">
-                  <FaRegEye className="text-4xl p-2 bg-white text-green-500 rounded-full cursor-pointer" />
-                </a>
-                <a href="https://github.com/valerojesus/my-portfolio/" target="_blank" rel="noreferrer">
-                  <FaCode className="text-4xl p-2 bg-white text-green-500 rounded-full cursor-pointer" />
-                </a>
-              </div>
-            </Content>
-          </Info>
-        </Container>
-        <Container>
-          <img src="/img/apv.png" alt="APV" className="rounded" />
-          <Info className="overlay">
-            <Content>
-              <h4 className="font-bold text-lg mb-3 text-center">APV</h4>
-              <div className="flex justify-center items-center space-x-8">
-                <a href="https://veterinarymanager.netlify.app/" target="_blank" rel="noreferrer">
-                  <FaRegEye className="text-4xl p-2 bg-white text-green-500 rounded-full cursor-pointer" />
-                </a>
-                <a href="https://github.com/valerojesus/APV-frontend/" target="_blank" rel="noreferrer">
-                  <FaCode className="text-4xl p-2 bg-white text-green-500 rounded-full cursor-pointer" />
-                </a>
-              </div>
-            </Content>
-          </Info>
-        </Container>
-        <Container>
-          <img src="/img/nodesend.png" alt="Node Send" className="rounded" />
-          <Info className="overlay">
-            <Content>
-              <h4 className="font-bold text-lg mb-3 text-center">Node Send</h4>
-              <div className="flex justify-center items-center space-x-8">
-                <a href="https://nodesend-frontend-two.vercel.app/" target="_blank" rel="noreferrer">
-                  <FaRegEye className="text-4xl p-2 bg-white text-green-500 rounded-full cursor-pointer" />
-                </a>
-                <a href="https://github.com/valerojesus/nodesend-frontend/" target="_blank" rel="noreferrer">
-                  <FaCode className="text-4xl p-2 bg-white text-green-500 rounded-full cursor-pointer" />
-                </a>
-              </div>
-            </Content>
-          </Info>
-        </Container>
-        <Container>
-          <img src="/img/crm-react.png" alt="CRM React" className="rounded" />
-          <Info className="overlay">
-            <Content>
-              <h4 className="font-bold text-lg mb-3 text-center">CRM React</h4>
-              <div className="flex justify-center items-center space-x-8">
-                <a href="https://crmrreact.netlify.app/" target="_blank" rel="noreferrer">
-                  <FaRegEye className="text-4xl p-2 bg-white text-green-500 rounded-full cursor-pointer" />
-                </a>
-                <a href="https://github.com/jvalerodev/crm-react/" target="_blank" rel="noreferrer">
-                  <FaCode className="text-4xl p-2 bg-white text-green-500 rounded-full cursor-pointer" />
-                </a>
-              </div>
-            </Content>
-          </Info>
-        </Container>
+
+      <div className="bg-black grid sm:grid-cols-2 lg:grid-cols-3 gap-y-9 gap-x-9 items-center mt-12 p-2">
+
+        {projects.map((project, i) => (
+          <Container key={`project-${i}`}>
+            <Image
+              src={project.image.src}
+              alt={project.image.alt}
+              width="1920px"
+              height="1000px"
+              layout="responsive"
+              placeholder="blur"
+              blurDataURL={project.image.src}
+              className="rounded-md"
+            />
+
+            <Info>
+              <Content>
+                <h4 className="font-bold text-lg mb-3 text-center">{project.name}</h4>
+                <div className="flex justify-center items-center space-x-8">
+                  <a href={project.viewUrl} target="_blank" rel="noreferrer">
+                    <FaRegEye className="text-4xl p-2 bg-white text-green-500 rounded-full cursor-pointer" />
+                  </a>
+                  <a href={project.codeUrl} target="_blank" rel="noreferrer">
+                    <FaCode className="text-4xl p-2 bg-white text-green-500 rounded-full cursor-pointer" />
+                  </a>
+                </div>
+              </Content>
+            </Info>
+          </Container>
+        ))}
       </div>
     </div>
   );

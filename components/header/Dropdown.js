@@ -18,7 +18,6 @@ const NavMenu = styled.nav`
   padding: 1rem 0;
   row-gap: 10px;
   
-
   ${({ active }) => active && `
     @media (max-width: 1023px) {
       background-color: rgb(34, 197, 94);
@@ -38,28 +37,29 @@ const NavItem = styled.a`
   font-weight: bold;
 `;
 
-const Dropdown = ({ open }) => {
+const Dropdown = ({ open, setOpen }) => {
   const { visibleEntry } = useVisibility();
+
+  const handleMenu = () => {
+    setOpen(!open);
+  };
   
   return (
     <NavMenu active={open}>
       <Link href="/#home">
-        <NavItem className={`transition hover:text-black px-3 cursor-pointer ${visibleEntry === '#home' && 'text-black'}`}>Home</NavItem>
+        <NavItem className={`transition hover:text-black px-3 cursor-pointer ${visibleEntry === '#home' && 'text-black'}`} onClick={handleMenu}>Home</NavItem>
       </Link>
       <Link href="/#about">
-        <NavItem className={`transition hover:text-black px-3 cursor-pointer ${visibleEntry === '#about' && 'text-black'}`}>About</NavItem>
+        <NavItem className={`transition hover:text-black px-3 cursor-pointer ${visibleEntry === '#about' && 'text-black'}`} onClick={handleMenu}>About</NavItem>
       </Link>
       <Link href="/#services">
-        <NavItem className={`transition hover:text-black px-3 cursor-pointer ${visibleEntry === '#services' && 'text-black'}`}>Services</NavItem>
+        <NavItem className={`transition hover:text-black px-3 cursor-pointer ${visibleEntry === '#services' && 'text-black'}`} onClick={handleMenu}>Services</NavItem>
       </Link>
       <Link href="/#portfolio">
-        <NavItem className={`transition hover:text-black px-3 cursor-pointer ${visibleEntry === '#portfolio' && 'text-black'}`}>Portfolio</NavItem>
-      </Link>
-      <Link href="/#blog">
-        <NavItem className={`transition hover:text-black px-3 cursor-pointer ${visibleEntry === '#blog' && 'text-black'}`}>Blog</NavItem>
+        <NavItem className={`transition hover:text-black px-3 cursor-pointer ${visibleEntry === '#portfolio' && 'text-black'}`} onClick={handleMenu}>Portfolio</NavItem>
       </Link>
       <Link href="/#contact">
-        <NavItem className={`transition hover:text-black px-3 cursor-pointer ${visibleEntry === '#contact' && 'text-black'}`}>Contact</NavItem>
+        <NavItem className={`transition hover:text-black px-3 cursor-pointer ${visibleEntry === '#contact' && 'text-black'}`} onClick={handleMenu}>Contact</NavItem>
       </Link>
     </NavMenu>
   );
