@@ -21,7 +21,7 @@ const About = () => {
         </div>
 
         <div className="lg:w-1/2 leading-7 mt-10 lg:mt-0">
-          <h3 className="text-3xl font-bold text-center">Hello, I am <span className="text-green-500">Web Developer</span></h3>
+          <h2 className="text-3xl font-bold text-center">Hello, I am <span className="text-green-500">Web Developer</span></h2>
 
           <p className="mt-5">
             I am a systems engineering student. I love the development of applications and web pages. I like to develop using the best practices,

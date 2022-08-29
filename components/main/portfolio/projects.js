@@ -6,7 +6,9 @@ const projects = [
       alt: 'My Portfolio'
     },
     viewUrl: 'https://jvalero.dev',
-    codeUrl: 'https://github.com/valerojesus/my-portfolio'
+    viewLabel: 'My Portfolio',
+    codeUrl: 'https://github.com/valerojesus/my-portfolio',
+    codeLabel: 'My Portfolio Code'
   },
   {
     name: 'APV',
@@ -15,7 +17,9 @@ const projects = [
       alt: 'APV'
     },
     viewUrl: 'https://veterinarymanager.netlify.app',
-    codeUrl: 'https://github.com/valerojesus/APV-frontend'
+    viewLabel: 'APV',
+    codeUrl: 'https://github.com/valerojesus/APV-frontend',
+    codeLabel: 'APV Code'
   },
   {
     name: 'Node Send',
@@ -24,7 +28,9 @@ const projects = [
       alt: 'Node Send'
     },
     viewUrl: 'https://nodesend-frontend-two.vercel.app',
-    codeUrl: 'https://github.com/valerojesus/nodesend-frontend'
+    viewLabel: 'Node Send',
+    codeUrl: 'https://github.com/valerojesus/nodesend-frontend',
+    codeLabel: 'Node Send Code'
   },
   {
     name: 'CRM React',
@@ -33,7 +39,9 @@ const projects = [
       alt: 'CRM React'
     },
     viewUrl: 'https://crmrreact.netlify.app',
-    codeUrl: 'https://github.com/jvalerodev/crm-react'
+    viewLabel: 'CRM React',
+    codeUrl: 'https://github.com/jvalerodev/crm-react',
+    codeLabel: 'CRM React Code'
   }
 ];
 

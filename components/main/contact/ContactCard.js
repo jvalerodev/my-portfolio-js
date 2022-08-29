@@ -6,7 +6,7 @@ const ContactCard = () => {
   return (
     <div className="mt-10 md:mt-0">
       <div className="border border-white p-8 space-y-8">
-        <h4 className="font-black uppercase">Contact Address</h4>
+        <p className="font-black uppercase">Contact Address</p>
 
         <div className="space-y-4">
           <div className="flex items-center space-x-4">

@@ -4,7 +4,7 @@ export const Stars1 = styled.div`
   width: 1px;
   height: 1px;
   background: transparent;
-  animation: starAnimation 50s linear infinite;
+  animation: starAnimation 75s linear infinite;
   box-shadow: 779px 1331px #fff, 324px 42px #fff, 303px 586px #fff,
     1312px 276px #fff, 451px 625px #fff, 521px 1931px #fff, 1087px 1871px #fff,
     36px 1546px #fff, 132px 934px #fff, 1698px 901px #fff, 1418px 664px #fff,
@@ -200,7 +200,7 @@ export const Stars2 = styled.div`
   width: 2px;
   height: 2px;
   background: transparent;
-  animation: starAnimation 100s linear infinite;
+  animation: starAnimation 125s linear infinite;
   box-shadow: 1448px 320px #fff, 1775px 1663px #fff, 332px 1364px #fff,
     878px 340px #fff, 569px 1832px #fff, 1422px 1684px #fff, 1946px 1907px #fff,
     121px 979px #fff, 1044px 1069px #fff, 463px 381px #fff, 423px 112px #fff,
@@ -221,12 +221,7 @@ export const Stars2 = styled.div`
     1977px 1491px #fff, 734px 1724px #fff, 210px 298px #fff, 816px 628px #fff,
     686px 770px #fff, 1721px 267px #fff, 1663px 511px #fff, 1481px 1141px #fff,
     582px 248px #fff, 1308px 953px #fff, 628px 657px #fff, 897px 1535px #fff,
-    270px 931px #fff, 791px 467px #fff, 1336px 1732px #fff, 1013px 1653px #fff,
-    1911px 956px #fff, 587px 816px #fff, 83px 456px #fff, 930px 1478px #fff,
-    1587px 1694px #fff, 614px 1200px #fff, 302px 1782px #fff, 1711px 1432px #fff,
-    443px 904px #fff, 1666px 714px #fff, 1588px 1167px #fff, 273px 1075px #fff,
-    1679px 461px #fff, 721px 664px #fff, 1202px 10px #fff, 166px 1126px #fff,
-    331px 1628px #fff, 430px 1565px #fff, 1585px 509px #fff, 640px 38px #fff;
+    270px 931px #fff, 791px 467px #fff, 1336px 1732px #fff, 1013px 1653px #fff;
 
   &::after {
     content: '';
@@ -255,12 +250,7 @@ export const Stars2 = styled.div`
       1977px 1491px #fff, 734px 1724px #fff, 210px 298px #fff, 816px 628px #fff,
       686px 770px #fff, 1721px 267px #fff, 1663px 511px #fff, 1481px 1141px #fff,
       582px 248px #fff, 1308px 953px #fff, 628px 657px #fff, 897px 1535px #fff,
-      270px 931px #fff, 791px 467px #fff, 1336px 1732px #fff, 1013px 1653px #fff,
-      1911px 956px #fff, 587px 816px #fff, 83px 456px #fff, 930px 1478px #fff,
-      1587px 1694px #fff, 614px 1200px #fff, 302px 1782px #fff, 1711px 1432px #fff,
-      443px 904px #fff, 1666px 714px #fff, 1588px 1167px #fff, 273px 1075px #fff,
-      1679px 461px #fff, 721px 664px #fff, 1202px 10px #fff, 166px 1126px #fff,
-      331px 1628px #fff, 430px 1565px #fff, 1585px 509px #fff, 640px 38px #fff;
+      270px 931px #fff, 791px 467px #fff, 1336px 1732px #fff, 1013px 1653px #fff;
   }
 `;
 
@@ -268,20 +258,14 @@ export const Stars3 = styled.div`
   width: 3px;
   height: 3px;
   background: transparent;
-  animation: starAnimation 150s linear infinite;
+  animation: starAnimation 175s linear infinite;
   box-shadow: 387px 1878px #fff, 760px 1564px #fff, 1487px 999px #fff,
     948px 1828px #fff, 1977px 1001px #fff, 1284px 1963px #fff, 656px 284px #fff,
     1268px 1635px #fff, 1820px 598px #fff, 642px 1900px #fff, 296px 57px #fff,
     921px 1620px #fff, 476px 1858px #fff, 658px 613px #fff, 1171px 1363px #fff,
     1419px 283px #fff, 1037px 731px #fff, 503px 663px #fff, 1562px 463px #fff,
     383px 1197px #fff, 1171px 1233px #fff, 876px 1768px #fff, 856px 1615px #fff,
-    1375px 1924px #fff, 1725px 918px #fff, 952px 119px #fff, 768px 1212px #fff,
-    992px 1462px #fff, 1929px 717px #fff, 1947px 755px #fff, 1818px 1123px #fff,
-    1896px 1672px #fff, 460px 198px #fff, 256px 271px #fff, 752px 544px #fff,
-    1222px 1859px #fff, 1851px 443px #fff, 313px 1858px #fff, 709px 446px #fff,
-    1546px 697px #fff, 674px 1155px #fff, 1112px 130px #fff, 355px 1790px #fff,
-    1496px 974px #fff, 1696px 480px #fff, 1316px 1265px #fff, 1645px 1063px #fff,
-    1182px 237px #fff, 427px 1582px #fff, 859px 253px #fff, 458px 939px #fff;
+    1375px 1924px #fff, 1725px 918px #fff, 952px 119px #fff, 768px 1212px #fff;
 
   &::after {
     content: '';
@@ -296,12 +280,6 @@ export const Stars3 = styled.div`
       921px 1620px #fff, 476px 1858px #fff, 658px 613px #fff, 1171px 1363px #fff,
       1419px 283px #fff, 1037px 731px #fff, 503px 663px #fff, 1562px 463px #fff,
       383px 1197px #fff, 1171px 1233px #fff, 876px 1768px #fff, 856px 1615px #fff,
-      1375px 1924px #fff, 1725px 918px #fff, 952px 119px #fff, 768px 1212px #fff,
-      992px 1462px #fff, 1929px 717px #fff, 1947px 755px #fff, 1818px 1123px #fff,
-      1896px 1672px #fff, 460px 198px #fff, 256px 271px #fff, 752px 544px #fff,
-      1222px 1859px #fff, 1851px 443px #fff, 313px 1858px #fff, 709px 446px #fff,
-      1546px 697px #fff, 674px 1155px #fff, 1112px 130px #fff, 355px 1790px #fff,
-      1496px 974px #fff, 1696px 480px #fff, 1316px 1265px #fff, 1645px 1063px #fff,
-      1182px 237px #fff, 427px 1582px #fff, 859px 253px #fff, 458px 939px #fff;
+      1375px 1924px #fff, 1725px 918px #fff, 952px 119px #fff, 768px 1212px #fff;
   }
 `;

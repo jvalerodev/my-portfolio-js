@@ -58,12 +58,12 @@ const Portfolio = () => {
 
             <Info>
               <Content>
-                <h4 className="font-bold text-lg mb-3 text-center">{project.name}</h4>
+                <h3 className="font-bold text-lg mb-3 text-center">{project.name}</h3>
                 <div className="flex justify-center items-center space-x-8">
-                  <a href={project.viewUrl} target="_blank" rel="noreferrer">
+                  <a href={project.viewUrl} target="_blank" rel="noreferrer" aria-label={project.viewLabel}>
                     <FaRegEye className="text-4xl p-2 bg-white text-green-500 rounded-full cursor-pointer" />
                   </a>
-                  <a href={project.codeUrl} target="_blank" rel="noreferrer">
+                  <a href={project.codeUrl} target="_blank" rel="noreferrer" aria-label={project.codeLabel}>
                     <FaCode className="text-4xl p-2 bg-white text-green-500 rounded-full cursor-pointer" />
                   </a>
                 </div>
